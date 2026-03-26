@@ -1,78 +1,211 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
-import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
-
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
-    <div class="py-2">
-      <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
-      </text>
+
+  <!-- ===== HERO: big photo left, info right ===== -->
+  <div class="flex flex-col md:flex-row gap-8 items-start mt-2 pb-8">
+    <!-- Photo: large, rounded corners -->
+    <div class="shrink-0">
+      <img
+        src="/profile.webp"
+        alt="Rui Gan"
+        class="w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover shadow-sm"
+      />
     </div>
-    <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
-      </a>
+    <!-- Info -->
+    <div class="flex-1">
+      <h1 class="text-4xl font-bold mb-0.5">Rui Gan</h1>
+      <p class="text-xl opacity-70 mb-3">甘锐</p>
+      <p class="text-base mb-1">Ph.D. Candidate · Department of Civil and Environmental Engineering</p>
+      <p class="text-base mb-3">
+        <a href="https://www.wisc.edu/" target="_blank" class="text-primary hover:underline">University of Wisconsin–Madison</a>
+      </p>
+      <p class="text-sm opacity-70 mb-1"><em>Email:</em> <a href="mailto:rgan6@wisc.edu" class="text-primary hover:underline">rgan6@wisc.edu</a></p>
+      <div class="flex flex-wrap items-center gap-3 mt-3 text-sm">
+        <a href="https://scholar.google.com/citations?user=8XqrbDkAAAAJ&hl=en" target="_blank" class="flex items-center gap-1 hover:text-primary transition-colors">
+          <img src="/logos/scholar.png" alt="" class="w-4 h-4" /> Google Scholar
+        </a>
+        <span class="opacity-30">·</span>
+        <a href="https://github.com/mcgrche" target="_blank" class="flex items-center gap-1 hover:text-primary transition-colors">
+          <img src="/logos/github.png" alt="" class="w-4 h-4" /> GitHub
+        </a>
+        <span class="opacity-30">·</span>
+        <a href="https://orcid.org/0009-0007-1344-9703" target="_blank" class="flex items-center gap-1 hover:text-primary transition-colors">
+          <img src="/logos/orcid.png" alt="" class="w-4 h-4" /> ORCID
+        </a>
+        <span class="opacity-30">·</span>
+        <a href="https://www.linkedin.com/in/ruiganc/" target="_blank" class="flex items-center gap-1 hover:text-primary transition-colors">
+          <img src="/logos/linkedin.png" alt="" class="w-4 h-4" /> LinkedIn
+        </a>
+      </div>
     </div>
   </div>
 
+  <!-- ===== INTRO PARAGRAPH with inline logos ===== -->
+  <div class="pb-6">
+    <div class="text-base leading-relaxed">
+      <p>
+        Welcome. No cookies here (unless you count the browser ones).
+      </p>
+      <p class="mt-3">
+        I am a 4th-year Ph.D. candidate at the
+        <img src="/logos/uw.png" alt="" class="inline w-5 h-5 align-text-bottom mx-0.5" />
+        <a href="https://www.wisc.edu/" target="_blank" class="font-semibold text-primary hover:underline">University of Wisconsin–Madison</a>,
+        working as a Research Assistant in the
+        <a href="https://topslab.wisc.edu/" target="_blank" class="text-primary hover:underline">TOPS Lab</a>
+        and the
+        <a href="https://cavh.cee.wisc.edu/" target="_blank" class="text-primary hover:underline">CAVH Research Group</a>,
+        advised by <a href="https://topslab.wisc.edu/about/people/bin-ran/" target="_blank" class="text-primary hover:underline">Prof. Bin Ran</a>.
+        I earned my B.S. (2020) and M.S. (2022) in Traffic Engineering from
+        <img src="/logos/seu.png" alt="" class="inline w-5 h-5 align-text-bottom mx-0.5" />
+        <a href="https://www.seu.edu.cn/english/" target="_blank" class="text-primary hover:underline">Southeast University</a> in Nanjing, China.
+        Starting Summer 2026, I will join
+        <img src="/logos/uber.png" alt="" class="inline w-5 h-5 align-text-bottom mx-0.5" />
+        <strong>Uber</strong> as an Apply Scientist intern.
+      </p>
+    </div>
+  </div>
+
+  <!-- ===== RESEARCH DIRECTION — wide rounded box ===== -->
+  <div class="pb-8">
+    <div class="card bg-base-200 rounded-2xl shadow-sm">
+      <div class="card-body py-5 px-6">
+        <p class="text-base leading-relaxed">
+          My research focuses on building autonomous driving systems that are
+          <strong class="text-primary">fair, transparent, and trustworthy</strong>,
+          leveraging <strong>Artificial Intelligence</strong> and <strong>Machine Learning</strong>.
+        </p>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li class="flex items-start gap-2">
+            <span class="text-primary mt-0.5">●</span>
+            <span><strong>Ethical & Safe Autonomous Driving</strong> — learning moral reasoning from naturalistic driving data for AV planning</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-primary mt-0.5">●</span>
+            <span><strong>Trajectory Prediction & Planning</strong> — physics-informed neural models for accurate vehicle motion forecasting</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-primary mt-0.5">●</span>
+            <span><strong>Vision-Language Models for Transportation</strong> — video VLMs for traffic accident analysis and understanding</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-primary mt-0.5">●</span>
+            <span><strong>Connected & Autonomous Vehicle Systems</strong> — V2X communication, cooperative driving, and infrastructure integration</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-primary mt-0.5">●</span>
+            <span><strong>Spatiotemporal Data Modeling</strong> — graph neural networks for traffic flow prediction and network analysis</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-sm opacity-50 mt-3">
+      Feel free to reach out if you'd like to discuss research or explore potential collaboration!
+    </p>
+  </div>
+
+  <!-- ===== HIGHLIGHTED RESEARCH ===== -->
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">Highlighted Research</div>
+    <p class="text-sm opacity-60 mb-5">Selected work across my three research threads</p>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="DPEP: Differentiable Predictive Ethics-Aware Planner"
+    img="/research/dpep.png"
+    desc="Learning ethical decision-making weights from naturalistic driving data (Waymo). Context-dependent moral reasoning aligned with UNESCO and EU AI ethics frameworks."
+    url="/research#ethics"
+    target="_self"
+    badge="Coming Soon"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Goal-based Neural Physics Trajectory Prediction"
+    img="/research/gnp.png"
+    desc="Physics-constrained deep learning model combining goal inference with neural ODE dynamics for accurate, physically plausible vehicle trajectory prediction."
+    url="https://arxiv.org/abs/2409.15182"
+    badge="TRB 2025"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="CrashSight: VLM-based Accident Video Understanding"
+    img="/research/crashsight.png"
+    desc="Fine-tuning video vision-language models (Qwen2-VL, VideoLLaMA2) for automated traffic crash analysis using a domain-specific VQA dataset with curriculum learning."
+    url="/research#vlm"
+    target="_self"
+    badge="Coming Soon"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="V2X-VLM: Cooperative Autonomous Driving with VLMs"
+    img="/research/v2x_vlm.png"
+    desc="End-to-end V2X cooperative driving framework integrating multi-perspective camera views with text-based scene descriptions via contrastive learning."
+    url="https://arxiv.org/abs/2408.09251"
+    badge="arXiv"
   />
 
+  <!-- ===== RECENT NEWS ===== -->
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Recent News</div>
   </div>
 
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
+  <div class="overflow-x-auto">
+    <table class="table table-sm">
+      <tbody>
+        <tr>
+          <td class="whitespace-nowrap font-medium text-primary w-28">Jan 2026</td>
+          <td>🎤 Presented <strong>8 posters</strong> at TRB 2026 Annual Meeting in Washington, D.C., covering traffic safety, AV, V2X, and AI-based modeling.</td>
+        </tr>
+        <tr>
+          <td class="whitespace-nowrap font-medium text-primary w-28">2025</td>
+          <td>📝 Submitted <strong>DPEP</strong> (Differentiable Predictive Ethics-Aware Planner) paper to high-impact journal.</td>
+        </tr>
+        <tr>
+          <td class="whitespace-nowrap font-medium text-primary w-28">2025</td>
+          <td>🎓 Preparing for <strong>Ph.D. preliminary examination</strong>.</td>
+        </tr>
+        <tr>
+          <td class="whitespace-nowrap font-medium text-primary w-28">2024</td>
+          <td>📄 Paper on freeway traffic flow prediction published in <strong>IEEE Transactions on Intelligent Transportation Systems</strong>.</td>
+        </tr>
+        <tr>
+          <td class="whitespace-nowrap font-medium text-primary w-28">2024</td>
+          <td>📄 Paper on vehicular speed prediction published in <strong>IEEE Internet of Things Journal</strong>.</td>
+        </tr>
+        <tr>
+          <td class="whitespace-nowrap font-medium text-primary w-28">2024</td>
+          <td>🔬 Patent on <strong>distributed computing for autonomous vehicles</strong> published (US Patent).</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="mt-3">
+    <a href="/news" class="btn btn-outline btn-sm btn-primary">View all news →</a>
+  </div>
+
+  <!-- ===== GISCUS COMMENTS ===== -->
+  <div class="mt-16 pt-8 border-t border-base-300">
+    <h3 class="text-xl font-bold mb-4">Leave a Comment</h3>
+    <p class="text-sm opacity-60 mb-4">Sign in with GitHub to leave a comment or reaction.</p>
+    <div class="giscus"></div>
+    <script src="https://giscus.app/client.js"
+        data-repo="mcgrche/mcgrche.github.io"
+        data-repo-id=""
+        data-category="General"
+        data-category-id=""
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+  </div>
 </BaseLayout>

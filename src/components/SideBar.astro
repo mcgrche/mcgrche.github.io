@@ -1,6 +1,4 @@
 ---
-import SideBarFooter from "./SideBarFooter.astro";
-import { Image } from "astro:assets";
 import SideBarMenu from "./SideBarMenu.astro";
 const { sideBarActiveItemID } = Astro.props;
 ---
@@ -8,16 +6,17 @@ const { sideBarActiveItemID } = Astro.props;
 <div class="drawer-side z-40">
   <label for="my-drawer" class="drawer-overlay"></label>
   <aside class="px-2 pt-2 h-auto min-h-full w-[19rem] bg-base-200 text-base-content flex flex-col">
-    <div class="w-fit mx-auto mt-5 mb-6">
-      <a href="/">
-        <div class="avatar transition ease-in-out hover:scale-[102%] block m-auto">
-          <div class="w-[8.5rem]">
-            <Image class="mask mask-circle" format="webp" width={300} height={300} src="/profile.webp" alt="Profile image" />
-          </div>
-        </div>
-      </a>
+    <!-- Simple site title at top -->
+    <div class="px-4 pt-6 pb-4">
+      <a href="/" class="text-xl font-bold hover:text-primary transition-colors">Rui Gan</a>
+      <p class="text-xs opacity-50 mt-0.5">甘锐 · Ph.D. Candidate</p>
     </div>
+
     <SideBarMenu sideBarActiveItemID={sideBarActiveItemID} />
-    <SideBarFooter />
+
+    <!-- Minimal footer -->
+    <div class="mt-auto pb-4 pt-2 px-4 text-xs opacity-40">
+      © 2026 Rui Gan
+    </div>
   </aside>
 </div>

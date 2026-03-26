@@ -1,40 +1,180 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title="Projects" sideBarActiveItemID="services">
-  <div>
-    <div class="text-3xl w-full font-bold mb-5">Services Header</div>
+<BaseLayout title="Services" sideBarActiveItemID="services">
+  <div class="pb-4 mt-2">
+    <div class="text-3xl w-full font-bold mb-1">Services</div>
   </div>
 
-  <HorizontalCard
-    title="Service 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    badge="NEW"
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Service 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Service 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Service 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+  <!-- ==================== ACADEMIC REVIEWING ==================== -->
+  <div class="text-2xl w-full font-bold mb-4 mt-4">Academic Reviewing</div>
+
+  <ul class="space-y-2 mb-8">
+    <li class="flex items-center gap-3">
+      <span class="badge badge-sm badge-primary shrink-0">Journal</span>
+      <span class="text-sm">Transportation Research Part C: Emerging Technologies</span>
+    </li>
+    <li class="flex items-center gap-3">
+      <span class="badge badge-sm badge-primary shrink-0">Journal</span>
+      <span class="text-sm">IEEE Transactions on Intelligent Transportation Systems</span>
+    </li>
+    <li class="flex items-center gap-3">
+      <span class="badge badge-sm badge-primary shrink-0">Journal</span>
+      <span class="text-sm">Accident Analysis & Prevention</span>
+    </li>
+    <li class="flex items-center gap-3">
+      <span class="badge badge-sm badge-primary shrink-0">Journal</span>
+      <span class="text-sm">IEEE Transactions on Emerging Topics in Computational Intelligence</span>
+    </li>
+    <li class="flex items-center gap-3">
+      <span class="badge badge-sm badge-primary shrink-0">Journal</span>
+      <span class="text-sm">Human-centric Computing and Information Sciences</span>
+    </li>
+    <li class="flex items-center gap-3">
+      <span class="badge badge-sm badge-primary shrink-0">Journal</span>
+      <span class="text-sm">The Journal of Supercomputing</span>
+    </li>
+  </ul>
+
+  <!-- ==================== TEACHING ==================== -->
+  <div class="text-2xl w-full font-bold mb-5 mt-10">Teaching</div>
+
+  <div class="space-y-10">
+
+    <div class="flex flex-col md:flex-row gap-5">
+      <div class="shrink-0">
+        <div class="w-full md:w-48 h-32 bg-base-300 rounded-lg flex items-center justify-center">
+          <span class="text-xs opacity-30">Course Photo</span>
+        </div>
+      </div>
+      <div class="flex-1">
+        <h3 class="font-bold text-base mb-1">CEE 678 — Advanced Traffic Modeling and Computer Simulation</h3>
+        <p class="text-sm opacity-70 mb-2">Spring 2025 · Teaching Assistant</p>
+        <p class="text-sm opacity-80">Instructor: <a href="https://topslab.wisc.edu/about/people/bin-ran/" target="_blank" class="text-primary hover:underline">Prof. Bin Ran</a></p>
+        <p class="text-sm opacity-60">Department of Civil and Environmental Engineering, University of Wisconsin–Madison</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-5">
+      <div class="shrink-0">
+        <div class="w-full md:w-48 h-32 bg-base-300 rounded-lg flex items-center justify-center">
+          <span class="text-xs opacity-30">Course Photo</span>
+        </div>
+      </div>
+      <div class="flex-1">
+        <h3 class="font-bold text-base mb-1">CEE 571 — Urban Transportation Planning</h3>
+        <p class="text-sm opacity-70 mb-2">Fall 2024 · Teaching Assistant</p>
+        <p class="text-sm opacity-80">Instructor: <a href="https://topslab.wisc.edu/about/people/bin-ran/" target="_blank" class="text-primary hover:underline">Prof. Bin Ran</a></p>
+        <p class="text-sm opacity-60">Department of Civil and Environmental Engineering, University of Wisconsin–Madison</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-5">
+      <div class="shrink-0">
+        <div class="w-full md:w-48 h-32 bg-base-300 rounded-lg flex items-center justify-center">
+          <span class="text-xs opacity-30">Course Photo</span>
+        </div>
+      </div>
+      <div class="flex-1">
+        <h3 class="font-bold text-base mb-1">CEE 579-1 & CEE 579-4 — Transportation Engineering Seminar</h3>
+        <p class="text-sm opacity-70 mb-2">Spring 2024 · Teaching Assistant</p>
+        <p class="text-sm opacity-80">Instructor: <a href="https://topslab.wisc.edu/about/people/bin-ran/" target="_blank" class="text-primary hover:underline">Prof. Bin Ran</a></p>
+        <p class="text-sm opacity-60">Department of Civil and Environmental Engineering, University of Wisconsin–Madison</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ==================== CONFERENCE & PRESENTATIONS ==================== -->
+  <div class="text-2xl w-full font-bold mb-5 mt-12">Presentations & Talks</div>
+
+  <div class="space-y-12">
+
+    <div>
+      <div class="text-lg font-bold mb-4 opacity-70">2026</div>
+
+      <div class="mb-8">
+        <h3 class="font-bold text-base mb-1">
+          <a href="https://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank" class="hover:text-primary">Transportation Research Board (TRB) 105th Annual Meeting</a>
+        </h3>
+        <p class="text-sm opacity-70 mb-2">January 2026 · Washington, D.C.</p>
+        <p class="text-sm opacity-80"><strong>Topics:</strong> Presented 8 posters covering ethical AV planning, trajectory prediction, VLM-based accident analysis, V2X communication, and traffic flow modeling.</p>
+        <div class="flex flex-wrap gap-3 mt-4">
+          <div class="w-60 h-40 bg-base-300 rounded-lg flex items-center justify-center"><span class="text-xs opacity-30">TRB 2026 Photo 1</span></div>
+          <div class="w-60 h-40 bg-base-300 rounded-lg flex items-center justify-center"><span class="text-xs opacity-30">TRB 2026 Photo 2</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="text-lg font-bold mb-4 opacity-70">2025</div>
+
+      <div class="mb-8">
+        <h3 class="font-bold text-base mb-1">Safe Mobility Conference</h3>
+        <p class="text-sm opacity-70 mb-2">2025 · Madison, WI</p>
+        <p class="text-sm opacity-80"><strong>Topic:</strong> Poster presentation on autonomous driving safety research.</p>
+        <div class="flex flex-wrap gap-3 mt-4">
+          <div class="w-60 h-40 bg-base-300 rounded-lg flex items-center justify-center"><span class="text-xs opacity-30">Photo 1</span></div>
+          <div class="w-60 h-40 bg-base-300 rounded-lg flex items-center justify-center"><span class="text-xs opacity-30">Photo 2</span></div>
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <h3 class="font-bold text-base mb-1">World Transport Convention (WTC)</h3>
+        <p class="text-sm opacity-70 mb-2">2025 · Suzhou, China</p>
+        <p class="text-sm opacity-80"><strong>Topic:</strong> Poster presentation on connected and autonomous vehicle research.</p>
+        <div class="flex flex-wrap gap-3 mt-4">
+          <div class="w-60 h-40 bg-base-300 rounded-lg flex items-center justify-center"><span class="text-xs opacity-30">Photo 1</span></div>
+          <div class="w-60 h-40 bg-base-300 rounded-lg flex items-center justify-center"><span class="text-xs opacity-30">Photo 2</span></div>
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <h3 class="font-bold text-base mb-1">
+          <a href="https://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank" class="hover:text-primary">Transportation Research Board (TRB) 104th Annual Meeting</a>
+        </h3>
+        <p class="text-sm opacity-70 mb-2">January 2025 · Washington, D.C.</p>
+        <p class="text-sm opacity-80"><strong>Topic:</strong> Goal-based Neural Physics Vehicle Trajectory Prediction Model</p>
+        <div class="flex flex-wrap gap-3 mt-4">
+          <div class="w-60 h-40 bg-base-300 rounded-lg flex items-center justify-center"><span class="text-xs opacity-30">TRB 2025 Photo 1</span></div>
+          <div class="w-60 h-40 bg-base-300 rounded-lg flex items-center justify-center"><span class="text-xs opacity-30">TRB 2025 Photo 2</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="text-lg font-bold mb-4 opacity-70">2024</div>
+
+      <div class="mb-8">
+        <h3 class="font-bold text-base mb-1">
+          <a href="https://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank" class="hover:text-primary">Transportation Research Board (TRB) 103rd Annual Meeting</a>
+        </h3>
+        <p class="text-sm opacity-70 mb-2">January 2024 · Washington, D.C.</p>
+        <p class="text-sm opacity-80"><strong>Topic:</strong> Generalized Spatio-Temporal Graph Convolution Networks with Dynamic Information for Traffic Speed Prediction</p>
+        <div class="flex flex-wrap gap-3 mt-4">
+          <div class="w-60 h-40 bg-base-300 rounded-lg flex items-center justify-center"><span class="text-xs opacity-30">TRB 2024 Photo 1</span></div>
+          <div class="w-60 h-40 bg-base-300 rounded-lg flex items-center justify-center"><span class="text-xs opacity-30">TRB 2024 Photo 2</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="text-lg font-bold mb-4 opacity-70">2023</div>
+
+      <div class="mb-8">
+        <h3 class="font-bold text-base mb-1">
+          <a href="https://www.trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank" class="hover:text-primary">Transportation Research Board (TRB) 102nd Annual Meeting</a>
+        </h3>
+        <p class="text-sm opacity-70 mb-2">January 2023 · Washington, D.C.</p>
+        <p class="text-sm opacity-80"><strong>Topic:</strong> A DDPG-Based Variable Speed Limit Control for Consecutive Bottleneck</p>
+        <div class="flex flex-wrap gap-3 mt-4">
+          <div class="w-60 h-40 bg-base-300 rounded-lg flex items-center justify-center"><span class="text-xs opacity-30">TRB 2023 Photo 1</span></div>
+          <div class="w-60 h-40 bg-base-300 rounded-lg flex items-center justify-center"><span class="text-xs opacity-30">TRB 2023 Photo 2</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
 </BaseLayout>
