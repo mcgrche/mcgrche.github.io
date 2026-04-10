@@ -6,7 +6,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   <!-- ===== HEADER BADGE + TITLE ===== -->
   <div class="text-center pb-6 mt-2">
-    <span class="badge badge-primary badge-lg mb-4">CVPR 2026 Workshop DriveX · Archival Track · Poster</span>
+    <span class="badge badge-primary badge-lg mb-4 shadow-sm">CVPR 2026 Workshop DriveX · Archival Track · Poster</span>
     <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">CrashSight: A Phase-Aware, Infrastructure-Centric Video Benchmark for Traffic Crash Scene Understanding and Reasoning</h1>
 
     <div class="flex flex-wrap justify-center gap-x-1 gap-y-1 text-sm mt-4">
@@ -14,187 +14,172 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <span>Junyi Ma<sup>1</sup>,</span>
       <span>Pei Li<sup>2</sup>,</span>
       <span>Xingyou Yang<sup>1</sup>,</span>
-      <span>Kai Cheng<sup>1</sup>,</span>
+      <span>Kai Chen<sup>3</sup>,</span>
       <span>Sikai Chen<sup>1</sup>,</span>
       <span>Bin Ran<sup>1</sup></span>
     </div>
-    <p class="text-sm opacity-60 mt-2"><sup>1</sup>University of Wisconsin–Madison &nbsp; <sup>2</sup>University of Wyoming</p>
+    <p class="text-sm opacity-60 mt-2"><sup>1</sup>University of Wisconsin–Madison &nbsp; <sup>2</sup>University of Wyoming &nbsp; <sup>3</sup>Columbia University</p>
   </div>
 
   <!-- ===== ACTION BUTTONS ===== -->
   <div class="flex flex-wrap justify-center gap-3 pb-8">
     <!-- TODO: Update href when camera-ready PDF is public -->
-    <a href="#" class="btn btn-primary btn-sm gap-1">
+    <a href="https://arxiv.org/abs/2604.08457" target="_blank" class="btn btn-primary btn-sm gap-1 shadow-sm hover:shadow-md transition-shadow">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: currentColor;"><path d="M8.267 14.68c-.184 0-.308.018-.372.036v1.178c.076.018.171.023.302.023.479 0 .774-.242.774-.651 0-.366-.254-.586-.704-.586zm3.487.012c-.2 0-.33.018-.407.036v2.61c.077.018.201.018.313.018.817.006 1.349-.444 1.349-1.396.006-.83-.479-1.268-1.255-1.268z"/><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM9.498 16.19c-.309.29-.765.42-1.296.42a2.23 2.23 0 0 1-.308-.018v1.426H7v-3.936A7.558 7.558 0 0 1 8.219 14c.557 0 .953.106 1.217.319.245.196.409.5.409.899 0 .4-.155.718-.347.972zm2.757 1.748c-.476.434-1.205.665-2.082.665a7.066 7.066 0 0 1-.767-.042v-3.937c.335-.048.745-.078 1.19-.078.868 0 1.434.177 1.876.526.478.39.757.999.757 1.834 0 .914-.319 1.573-.974 2.032zM17 14.77h-1.532v.911H16.9v.734h-1.432v1.604h-.906V14.03H17v.74zM14 9h-1V4l5 5h-4z"/></svg>
-      Paper
+      arXiv
     </a>
-    <a href="https://github.com/mcgrche/CrashSight-VQA" target="_blank" class="btn btn-outline btn-sm gap-1">
+    <a href="https://github.com/mcgrche/CrashSight-VQA" target="_blank" class="btn btn-outline btn-sm gap-1 hover:shadow-md transition-shadow">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: currentColor;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"/></svg>
       Code
     </a>
     <!-- TODO: Uncomment when arXiv link is available
-    <a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank" class="btn btn-outline btn-sm gap-1">arXiv</a>
+    <a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank" class="btn btn-outline btn-sm gap-1 hover:shadow-md transition-shadow">arXiv</a>
     -->
     <!-- TODO: Uncomment when dataset is released
-    <a href="#" class="btn btn-outline btn-sm gap-1">Dataset</a>
+    <a href="#" class="btn btn-outline btn-sm gap-1 hover:shadow-md transition-shadow">Dataset</a>
     -->
   </div>
 
-  <!-- ===== TEASER (Figure 1) ===== -->
+  <!-- ===== OVERVIEW / TEASER (Figure 1) — full width ===== -->
   <div class="pb-10">
+    <h2 class="text-2xl font-bold mb-4">Overview</h2>
     <img src="/crashsight/teaser.png" alt="CrashSight Overview" class="w-full rounded-xl shadow-sm" />
-    <p class="text-xs text-center opacity-50 mt-2">Overview of CrashSight-VQA. (a) Phase-aware temporal structure of a crash video. (b) VLM performance comparison across 7 QA categories. (c) Example QA pairs spanning visual grounding and causal reasoning.</p>
   </div>
 
-  <!-- ===== ABSTRACT ===== -->
-  <div class="pb-10">
-    <h2 class="text-2xl font-bold mb-4">Abstract</h2>
-    <div class="card bg-base-200 rounded-xl">
-      <div class="card-body py-5 px-6">
-        <p class="text-sm leading-relaxed">
-          Cooperative autonomous driving requires traffic scene understanding from both vehicle and infrastructure perspectives. While vision-language models (VLMs) show strong general reasoning capabilities, their performance in safety-critical traffic scenarios remains insufficiently evaluated due to the ego-vehicle focus of existing benchmarks. To bridge this gap, we present <strong>CrashSight</strong>, a large-scale vision-language benchmark for roadway crash understanding using real-world roadside camera data. The dataset comprises <strong>250 crash videos</strong>, annotated with <strong>13K multiple-choice question-answer pairs</strong> organized under a two-tier taxonomy. Tier 1 evaluates the visual grounding of scene context and involved parties, while Tier 2 probes higher-level reasoning, including crash mechanics, causal attribution, temporal progression, and post-crash outcomes. We benchmark <strong>8 state-of-the-art VLMs</strong> and show that, despite strong scene description capabilities, current models struggle with temporal and causal reasoning in safety-critical scenarios. We provide a detailed analysis of failure scenarios and discuss directions for improving VLM crash understanding. The benchmark provides a standardized evaluation framework for infrastructure-assisted perception in cooperative autonomous driving.
-        </p>
-      </div>
-    </div>
-  </div>
+  <!-- ===== Constrained-width wrapper for everything below ===== -->
+  <div class="max-w-4xl mx-auto">
 
-  <!-- ===== HIGHLIGHTS ===== -->
-  <div class="pb-10">
-    <h2 class="text-2xl font-bold mb-4">Highlights</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="card bg-base-200 rounded-xl">
-        <div class="card-body py-4 px-5">
-          <h3 class="font-bold text-sm text-primary mb-1">First Infrastructure-Side Crash VQA</h3>
-          <p class="text-xs opacity-70">250 expert-annotated surveillance clips with phase-aware dense captions and 13K multiple-choice QA pairs across 7 categories.</p>
-        </div>
-      </div>
-      <div class="card bg-base-200 rounded-xl">
-        <div class="card-body py-4 px-5">
-          <h3 class="font-bold text-sm text-primary mb-1">4-Stage Annotation Pipeline</h3>
-          <p class="text-xs opacity-70">VLM-assisted drafting → human expert refinement → LLM-driven VQA generation → verification &amp; augmentation.</p>
-        </div>
-      </div>
-      <div class="card bg-base-200 rounded-xl">
-        <div class="card-body py-4 px-5">
-          <h3 class="font-bold text-sm text-primary mb-1">+16.1% via Fine-Tuning</h3>
-          <p class="text-xs opacity-70">Domain-specific fine-tuning yields substantial gains; a 3B fine-tuned model surpasses all 8B zero-shot baselines.</p>
-        </div>
-      </div>
-      <div class="card bg-base-200 rounded-xl">
-        <div class="card-body py-4 px-5">
-          <h3 class="font-bold text-sm text-primary mb-1">Systematic Error Taxonomy</h3>
-          <p class="text-xs opacity-70">Transition analysis traces persistent failures to visual token budget, frozen encoder, and pretraining distribution mismatch.</p>
+    <!-- ===== ABSTRACT ===== -->
+    <div class="pb-10">
+      <h2 class="text-2xl font-bold mb-4">Abstract</h2>
+      <div class="card bg-base-200 rounded-xl border-l-4 border-primary">
+        <div class="card-body py-5 px-6">
+          <p class="text-sm leading-relaxed">
+            Cooperative autonomous driving requires traffic scene understanding from both vehicle and infrastructure perspectives. While vision-language models (VLMs) show strong general reasoning capabilities, their performance in safety-critical traffic scenarios remains insufficiently evaluated due to the ego-vehicle focus of existing benchmarks. To bridge this gap, we present <strong>CrashSight</strong>, a large-scale vision-language benchmark for roadway crash understanding using real-world roadside camera data. The dataset comprises <strong>250 crash videos</strong>, annotated with <strong>13K multiple-choice question-answer pairs</strong> organized under a two-tier taxonomy. Tier 1 evaluates the visual grounding of scene context and involved parties, while Tier 2 probes higher-level reasoning, including crash mechanics, causal attribution, temporal progression, and post-crash outcomes. We benchmark <strong>8 state-of-the-art VLMs</strong> and show that, despite strong scene description capabilities, current models struggle with temporal and causal reasoning in safety-critical scenarios. We provide a detailed analysis of failure scenarios and discuss directions for improving VLM crash understanding. The benchmark provides a standardized evaluation framework for infrastructure-assisted perception in cooperative autonomous driving.
+          </p>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- ===== PIPELINE (Figure 2) ===== -->
-  <div class="pb-10">
-    <h2 class="text-2xl font-bold mb-4">Benchmark Construction Pipeline</h2>
-    <img src="/crashsight/pipeline.png" alt="CrashSight Pipeline" class="w-full rounded-xl shadow-sm" />
-    <p class="text-xs text-center opacity-50 mt-2">Surveillance videos are processed through a 4-stage pipeline: (1) VLM-assisted draft captioning with phase boundaries, (2) human expert refinement, (3) LLM-driven VQA generation with counterfactual distractors, and (4) verification &amp; augmentation.</p>
-  </div>
+    <!-- ===== HIGHLIGHTS (bullet points with mini-titles) ===== -->
+    <div class="pb-10">
+      <h2 class="text-2xl font-bold mb-4">Highlights</h2>
+      <ul class="space-y-3 text-sm leading-relaxed">
+        <li><strong class="text-primary">First Infrastructure-Side Crash VQA.</strong> 250 expert-annotated surveillance clips with phase-aware dense captions and 13K multiple-choice QA pairs across 7 categories.</li>
+        <li><strong class="text-primary">4-Stage Annotation Pipeline.</strong> VLM-assisted drafting → human expert refinement → LLM-driven VQA generation → verification &amp; augmentation.</li>
+        <li><strong class="text-primary">+16.1% via Fine-Tuning.</strong> Domain-specific fine-tuning yields substantial gains; a 3B fine-tuned model surpasses all 8B zero-shot baselines.</li>
+        <li><strong class="text-primary">Systematic Error Taxonomy.</strong> Transition analysis traces persistent failures to visual token budget, frozen encoder, and pretraining distribution mismatch.</li>
+      </ul>
+    </div>
 
-  <!-- ===== QA TAXONOMY (Figure 3) ===== -->
-  <div class="pb-10">
-    <h2 class="text-2xl font-bold mb-4">QA Taxonomy</h2>
-    <img src="/crashsight/taxonomy.png" alt="QA Taxonomy" class="w-full rounded-xl shadow-sm" />
-    <p class="text-xs text-center opacity-50 mt-2">Seven QA categories in two tiers: Crash Understanding (SI, IP, PCO) and Crash Reasoning (CM, FD, TS), plus Robustness probes for hallucination resistance.</p>
-  </div>
+    <!-- ===== PIPELINE (Figure 2) ===== -->
+    <div class="pb-10">
+      <h2 class="text-2xl font-bold mb-4">Benchmark Construction Pipeline</h2>
+      <p class="text-sm leading-relaxed mb-4">We develop a scalable 4-stage pipeline that transforms raw surveillance footage into a structured VQA benchmark. The pipeline combines VLM-assisted draft captioning with explicit phase boundaries, human expert refinement using a standardized correction template, LLM-driven QA generation with counterfactual distractors, and a final verification and augmentation pass. Approximately 90% of VLM drafts require substantial human correction, underscoring the necessity of expert oversight in safety-critical annotation.</p>
+      <img src="/crashsight/pipeline.png" alt="CrashSight Pipeline" class="w-full rounded-xl shadow-sm" />
+    </div>
 
-<!-- ===== VIDEO DEMOS ===== -->
-  <div class="pb-10">
-    <h2 class="text-2xl font-bold mb-4">Video Demos</h2>
-    <p class="text-sm opacity-70 mb-4">Example crash clips from CrashSight, showing phase-aware temporal decomposition from infrastructure cameras.</p>
+    <!-- ===== QA TAXONOMY (Figure 3) ===== -->
+    <div class="pb-10">
+      <h2 class="text-2xl font-bold mb-4">QA Taxonomy</h2>
+      <p class="text-sm leading-relaxed mb-4">CrashSight organizes 13K QA pairs into a two-tier, seven-category taxonomy. Tier 1 (Crash Understanding) covers scene identification, involved parties, and post-crash outcomes through phase-local recognition. Tier 2 (Crash Reasoning) requires cross-phase temporal integration and causal inference for crash mechanics, fault determination, and temporal sequence tasks. A dedicated robustness category probes hallucination resistance with four distinct question types.</p>
+      <img src="/crashsight/taxonomy.png" alt="QA Taxonomy" class="w-full rounded-xl shadow-sm" />
+    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-      <div>
-        <video controls class="w-full rounded-xl shadow-sm">
-          <source src="/crashsight/demo1.mp4" type="video/mp4" />
-        </video>
-        <p class="text-xs text-center opacity-50 mt-2">Side-impact collision at an urban intersection, annotated with pre-crash context, collision dynamics, and aftermath.</p>
+    <!-- ===== VIDEO DEMOS ===== -->
+    <div class="pb-10">
+      <h2 class="text-2xl font-bold mb-4">Video Demos</h2>
+      <p class="text-sm leading-relaxed mb-4">Example crash clips from CrashSight, showing phase-aware temporal decomposition from infrastructure cameras.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="rounded-xl border border-base-300 overflow-hidden">
+          <video controls class="w-full">
+            <source src="/crashsight/demo1.mp4" type="video/mp4" />
+          </video>
+          <p class="text-xs text-center opacity-50 py-2 px-3">Side-impact collision at an urban intersection.</p>
+        </div>
+        <div class="rounded-xl border border-base-300 overflow-hidden">
+          <video controls class="w-full">
+            <source src="/crashsight/demo2.mp4" type="video/mp4" />
+          </video>
+          <p class="text-xs text-center opacity-50 py-2 px-3">Rear-end collision on a multi-lane roadway.</p>
+        </div>
       </div>
-      <div>
-        <video controls class="w-full rounded-xl shadow-sm">
-          <source src="/crashsight/demo2.mp4" type="video/mp4" />
-        </video>
-        <p class="text-xs text-center opacity-50 mt-2">Rear-end collision on a multi-lane roadway. Evaluates VLM ability to identify crash mechanics and involved parties.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="rounded-xl border border-base-300 overflow-hidden">
+          <video controls class="w-full">
+            <source src="/crashsight/demo3.mp4" type="video/mp4" />
+          </video>
+          <p class="text-xs text-center opacity-50 py-2 px-3">Crash involving a vulnerable road user.</p>
+        </div>
+        <div class="rounded-xl border border-base-300 overflow-hidden">
+          <video controls class="w-full">
+            <source src="/crashsight/demo4.mp4" type="video/mp4" />
+          </video>
+          <p class="text-xs text-center opacity-50 py-2 px-3">Multi-vehicle incident requiring temporal sequence reasoning.</p>
+        </div>
       </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div>
-        <video controls class="w-full rounded-xl shadow-sm">
-          <source src="/crashsight/demo3.mp4" type="video/mp4" />
-        </video>
-        <p class="text-xs text-center opacity-50 mt-2">Crash involving a vulnerable road user. Robustness questions test whether VLMs resist hallucinating unobservable evidence.</p>
-      </div>
-      <div>
-        <video controls class="w-full rounded-xl shadow-sm">
-          <source src="/crashsight/demo4.mp4" type="video/mp4" />
-        </video>
-        <p class="text-xs text-center opacity-50 mt-2">Multi-vehicle incident requiring temporal sequence reasoning across pre-crash, collision, and aftermath phases.</p>
+
+    <!-- ===== DATASET STATISTICS (Figure 4) ===== -->
+    <div class="pb-10">
+      <h2 class="text-2xl font-bold mb-4">Dataset Statistics</h2>
+      <p class="text-sm leading-relaxed mb-4">The benchmark contains 13,016 QA pairs with approximately uniform answer position distribution (23.3–27.8%) after option shuffling, eliminating position bias. Involved Parties (IP) is the largest category at 28.0% of all questions, reflecting the complexity of entity identification. Side-impact and T-bone collisions are the most prevalent accident types, consistent with the composition of the TAD source corpus.</p>
+      <img src="/crashsight/statistics.png" alt="Dataset Statistics" class="w-full rounded-xl shadow-sm" />
+    </div>
+
+    <!-- ===== KEY RESULTS (Table 2) ===== -->
+    <div class="pb-10">
+      <h2 class="text-2xl font-bold mb-4">Key Results</h2>
+      <p class="text-sm leading-relaxed mb-4">We benchmark 8 VLM configurations across four model families. Domain-specific fine-tuning yields up to +16.1 average accuracy improvement, with a fine-tuned 3B model (74.7%) surpassing all zero-shot baselines including InternVL3-8B (68.7%). A persistent human–AI gap of 18.3 points remains, concentrated in visually demanding categories such as Involved Parties and Crash Mechanics. Best zero-shot in <span class="underline">underline</span>, best overall in <strong>bold</strong>.</p>
+
+      <div class="overflow-x-auto rounded-xl border border-base-300">
+        <table class="table table-sm text-xs">
+          <thead>
+            <tr class="bg-base-200">
+              <th>Model</th><th>Size</th><th>SI</th><th>IP</th><th>CM</th><th>FD</th><th>PCO</th><th>TS</th><th>Rob</th><th class="font-bold">AVG</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="opacity-60"><td colspan="10" class="font-semibold text-xs pt-3">Zero-Shot Models</td></tr>
+            <tr class="hover"><td>LLaVA-OneVision</td><td>0.5B</td><td>59.4</td><td>36.0</td><td>36.7</td><td>50.6</td><td>48.0</td><td>52.4</td><td>18.9</td><td>41.5</td></tr>
+            <tr class="hover"><td>LLaVA-NeXT-Video</td><td>7B</td><td>75.5</td><td>52.3</td><td>51.6</td><td>58.6</td><td>57.1</td><td>42.9</td><td>66.1</td><td>58.6</td></tr>
+            <tr class="hover"><td>Qwen2.5-VL</td><td>3B</td><td>66.8</td><td>50.6</td><td>52.0</td><td>54.5</td><td>62.8</td><td>64.3</td><td>71.1</td><td>58.6</td></tr>
+            <tr class="hover"><td>Qwen2.5-VL</td><td>7B</td><td>67.7</td><td>51.9</td><td>55.4</td><td>66.7</td><td>74.2</td><td>66.7</td><td>73.3</td><td>62.9</td></tr>
+            <tr class="hover"><td>InternVL3</td><td>2B</td><td>71.8</td><td>52.1</td><td>59.2</td><td>70.1</td><td>71.2</td><td>81.0</td><td>71.1</td><td>64.2</td></tr>
+            <tr class="hover"><td>InternVL3</td><td>8B</td><td class="underline">72.4</td><td class="underline">58.1</td><td class="underline">61.1</td><td class="underline">71.3</td><td class="underline">80.3</td><td class="underline font-bold">85.7</td><td class="underline">82.2</td><td class="underline">68.7</td></tr>
+            <tr class="opacity-60"><td colspan="10" class="font-semibold text-xs pt-3">Fine-Tuned Models (Ours)</td></tr>
+            <tr class="bg-base-200 hover"><td>Qwen2.5-VL (FT)</td><td>3B</td><td class="font-bold">84.0</td><td>61.6</td><td class="font-bold">69.3</td><td>71.3</td><td>78.8</td><td>76.0</td><td>97.2</td><td>74.7</td></tr>
+            <tr class="bg-base-200 hover"><td class="font-bold">Qwen2.5-VL (FT)</td><td class="font-bold">7B</td><td>80.6</td><td class="font-bold">63.2</td><td>68.7</td><td class="font-bold">83.9</td><td class="font-bold">84.3</td><td>76.2</td><td class="font-bold">97.8</td><td class="text-primary font-bold">76.4</td></tr>
+            <tr class="opacity-40"><td>Human Expert</td><td>–</td><td>95.1</td><td>94.7</td><td>93.8</td><td>94.5</td><td>95.1</td><td>94.8</td><td>99.2</td><td>94.7</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </div>
 
-  <!-- ===== DATASET STATISTICS (Figure 4) ===== -->
-  <div class="pb-10">
-    <h2 class="text-2xl font-bold mb-4">Dataset Statistics</h2>
-    <img src="/crashsight/statistics.png" alt="Dataset Statistics" class="w-full rounded-xl shadow-sm" />
-    <p class="text-xs text-center opacity-50 mt-2">(a) Ground-truth answer position distribution (≈uniform). (b) QA count by category. (c) Accident type distribution — side-impact and T-bone most prevalent.</p>
-  </div>
-
-  <!-- ===== KEY RESULTS (Table 2) ===== -->
-  <div class="pb-10">
-    <h2 class="text-2xl font-bold mb-4">Key Results</h2>
-    <p class="text-sm opacity-70 mb-4">VQA accuracy (%) on CrashSight-VQA test split. Best zero-shot in <span class="underline">underline</span>, best overall in <strong>bold</strong>.</p>
-
-    <div class="overflow-x-auto">
-      <table class="table table-sm text-xs">
-        <thead>
-          <tr class="bg-base-200">
-            <th>Model</th><th>Size</th><th>SI</th><th>IP</th><th>CM</th><th>FD</th><th>PCO</th><th>TS</th><th>Rob</th><th class="font-bold">AVG</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="opacity-60"><td colspan="10" class="font-semibold text-xs pt-3">Zero-Shot Models</td></tr>
-          <tr><td>LLaVA-OneVision</td><td>0.5B</td><td>59.4</td><td>36.0</td><td>36.7</td><td>50.6</td><td>48.0</td><td>52.4</td><td>18.9</td><td>41.5</td></tr>
-          <tr><td>LLaVA-NeXT-Video</td><td>7B</td><td>75.5</td><td>52.3</td><td>51.6</td><td>58.6</td><td>57.1</td><td>42.9</td><td>66.1</td><td>58.6</td></tr>
-          <tr><td>Qwen2.5-VL</td><td>3B</td><td>66.8</td><td>50.6</td><td>52.0</td><td>54.5</td><td>62.8</td><td>64.3</td><td>71.1</td><td>58.6</td></tr>
-          <tr><td>Qwen2.5-VL</td><td>7B</td><td>67.7</td><td>51.9</td><td>55.4</td><td>66.7</td><td>74.2</td><td>66.7</td><td>73.3</td><td>62.9</td></tr>
-          <tr><td>InternVL3</td><td>2B</td><td>71.8</td><td>52.1</td><td>59.2</td><td>70.1</td><td>71.2</td><td>81.0</td><td>71.1</td><td>64.2</td></tr>
-          <tr><td>InternVL3</td><td>8B</td><td class="underline">72.4</td><td class="underline">58.1</td><td class="underline">61.1</td><td class="underline">71.3</td><td class="underline">80.3</td><td class="underline font-bold">85.7</td><td class="underline">82.2</td><td class="underline">68.7</td></tr>
-          <tr class="opacity-60"><td colspan="10" class="font-semibold text-xs pt-3">Fine-Tuned Models (Ours)</td></tr>
-          <tr class="bg-base-200"><td>Qwen2.5-VL (FT)</td><td>3B</td><td>84.0</td><td>61.6</td><td class="font-bold">69.3</td><td>71.3</td><td>78.8</td><td>76.0</td><td>97.2</td><td>74.7</td></tr>
-          <tr class="bg-base-200 font-bold"><td>Qwen2.5-VL (FT)</td><td>7B</td><td class="font-bold">80.6</td><td class="font-bold">63.2</td><td>68.7</td><td class="font-bold">83.9</td><td class="font-bold">84.3</td><td>76.2</td><td class="font-bold">97.8</td><td class="text-primary font-bold">76.4</td></tr>
-          <tr class="opacity-40"><td>Human Expert</td><td>–</td><td>95.1</td><td>94.7</td><td>93.8</td><td>94.5</td><td>95.1</td><td>94.8</td><td>99.2</td><td>94.7</td></tr>
-        </tbody>
-      </table>
+    <!-- ===== QUALITATIVE ANALYSIS (Figure 5) ===== -->
+    <div class="pb-10">
+      <h2 class="text-2xl font-bold mb-4">Qualitative Analysis</h2>
+      <p class="text-sm leading-relaxed mb-4">We identify two dominant persistent failure modes that fine-tuning cannot resolve. Temporal reasoning failures arise when sparse uniform frame sampling omits short but causally decisive pre-crash interactions, causing incomplete event reconstruction. Spatial grounding failures occur when bounded pixel resolution and a frozen visual encoder prevent the model from discriminating fine-grained entity details under oblique surveillance viewpoints.</p>
+      <img src="/crashsight/qualitative.png" alt="Failure Analysis" class="w-full rounded-xl shadow-sm" />
     </div>
-  </div>
 
-  <!-- ===== QUALITATIVE ANALYSIS (Figure 5) ===== -->
-  <div class="pb-10">
-    <h2 class="text-2xl font-bold mb-4">Qualitative Analysis</h2>
-    <img src="/crashsight/qualitative.png" alt="Failure Analysis" class="w-full rounded-xl shadow-sm" />
-    <p class="text-xs text-center opacity-50 mt-2">(a) Temporal reasoning failure from insufficient visual token budget. (b) Fault determination failure from bounded pixel resolution and frozen visual encoder.</p>
-  </div>
-
-  <!-- ===== BIBTEX ===== -->
-  <div class="pb-10">
-    <h2 class="text-2xl font-bold mb-4">Citation</h2>
-    <div class="mockup-code bg-base-200 text-sm">
-      <pre class="px-6 py-4 overflow-x-auto"><code>@inproceedings{'{'}gan2026crashsight,
+    <!-- ===== BIBTEX ===== -->
+    <div class="pb-10">
+      <h2 class="text-2xl font-bold mb-4">Citation</h2>
+      <div class="rounded-xl bg-base-200 p-6 overflow-x-auto">
+        <pre class="text-sm leading-relaxed text-base-content"><code>@inproceedings{'{'}gan2026crashsight,
   title={'{'}CrashSight: A Phase-Aware, Infrastructure-Centric Video Benchmark
          for Traffic Crash Scene Understanding and Reasoning{'}'},
   author={'{'}Gan, Rui and Ma, Junyi and Li, Pei and Yang, Xingyou
-          and Cheng, Kai and Chen, Sikai and Ran, Bin{'}'},
+          and Chen, Kai and Chen, Sikai and Ran, Bin{'}'},
   booktitle={'{'}Proceedings of the IEEE/CVF Conference on Computer Vision
              and Pattern Recognition Workshops (CVPRW){'}'},
   year={'{'}2026{'}'}
 {'}'}</code></pre>
+      </div>
     </div>
-  </div>
+
+  </div><!-- end max-w-4xl wrapper -->
 
 </BaseLayout>
